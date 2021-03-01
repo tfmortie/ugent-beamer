@@ -57,7 +57,8 @@
         \node[anchor=south west,inner sep=0mm] (ugent) at (.05*\the\paperwidth,.025*\the\paperheight) {\includegraphics[height=.15\textheight]{ugent-\beamer@languagevalue.png}};
     \else\ifinsectionframe
         \fill[color=ugentblue] (.05*\the\paperwidth,.2*\the\paperheight) rectangle (\the\paperwidth,\the\paperheight);
-        \node[anchor=south west,inner sep=0mm] at (.05*\the\paperwidth,.025*\the\paperheight) {\includegraphics[height=.15\textheight]{ugent-\beamer@languagevalue.png}};
+        % Avoid UGent logo's in section page
+        %\node[anchor=south west,inner sep=0mm] at (.05*\the\paperwidth,.025*\the\paperheight) {\includegraphics[height=.15\textheight]{ugent-\beamer@languagevalue.png}}; 
     \fi\fi
     \end{tikzpicture}
 }
